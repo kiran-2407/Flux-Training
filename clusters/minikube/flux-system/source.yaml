@@ -1,0 +1,11 @@
+# flux-system/source.yaml
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: myapp
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/kiran-2407/Flux-Linux-RHEL9.2.git
+  ref:
+    branch: main
